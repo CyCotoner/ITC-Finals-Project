@@ -1,0 +1,328 @@
+<HTML>
+<link rel= "Webpage icon" href="Pictures/Logo.png">
+<link rel ="stylesheet" href="Codes.css">
+<script language="Javascript">
+function Destination(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+<style>
+
+
+.tab {
+  position:absolute;
+  overflow: hidden;
+  left:215px;
+  top:78px;
+  padding:2px;
+  background-image:url(./Pictures/Planks.png);
+  background-size:275px 70px;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float:right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 17px 115px;
+  transition: 0.2s;
+  font-family:Font1;
+  font-size: 17px;
+  color:#B5EAAA;
+  text-shadow: 2px 2px #387C44;
+  
+}
+
+
+.tab button:hover {
+  background-image:inherit;
+  background-size:275px 70px;
+}
+
+
+.tab button.active {
+  background-image:inherit;
+  background-size:275px 70px;
+}
+
+
+.tabcontent {
+  position:absolute;
+  background-image:url(./Pictures/TabBG2.png);
+  background-size:1150px 450px;
+  top:140px;
+  left:70px;
+  display: none;
+  padding: 5px 10px;
+  width:1100px;
+  height:-1000px;
+  border:none;
+  font-family:Font1;
+  letter-spacing:4;
+  text-align:center;
+  font-size: 25px;
+  color:#B5EAAA;
+  text-shadow: 2px 2px #387C44;
+}
+
+
+
+#Categories ul{
+	font-family:Font1;
+	position:relative;
+	text-align:center;
+	top: 100px;
+	left: 180px;
+	width:1000px;
+	letter-spacing:4px;
+	text-shadow:3px 3px #387C44;
+}
+
+#LowerBoarder {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:1720px;
+	width:0px;
+}
+
+#LowerNavigation a{
+	position:relative;
+	text-align:center;
+	left:500px;
+	top:1990px;
+	font-family:Font1;
+	color:#B5EAAA;
+	font-size:30px;
+	text-shadow: 3px 3px #493D26;
+	z-index:1
+}
+
+</style>
+<TITLE> Galang Juan | Destinations </TITLE>
+<HEAD>
+<div id="UpperBoarder"> 
+<img src="./Pictures/Boarder.png" height="325px" width="1280px">
+</div>
+
+<div id="Logo"> 
+<a href="Index.html">
+<img src="./Pictures/Logo.png" height="80px" width="80px"></a>
+</div>
+
+<div id="Navigation1">
+ <a href="Destinations.html" title="Let's Explore!" style="text-decoration:none;"> DESTINATIONS
+</a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; &nbsp; <a href="Foods.html" title="Find the Best food spots " style="text-decoration:none;"> FOOD LOCATIONS </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Hotels.html" title= "BOOK NOW!" style="text-decoration:none";> HOTELS </a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="Blogs.html" title= "Share your experiences" style="text-decoration:none";> COMMUNITY BLOG</a>
+</div>
+
+</HEAD>
+<BODY>
+<div class="tab">
+  <button class="tablinks" onclick="Destination(event, 'Luzon')">Luzon</button>
+  <button class="tablinks" onclick="Destination(event, 'Vizayas')">Vizayas</button>
+  <button class="tablinks" onclick="Destination(event, 'Mindanao')">Mindanao</button>
+</div>
+
+<div id="Luzon" class="tabcontent">
+	<h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Luzon Destinations to go to! </h3>
+	
+	<a href="https://www.google.com/maps/place/Intramuros,+Manila,+1002+Metro+Manila/@14.5891952,120.9656417,15z/data=!3m1!4b1!4m5!3m4!1s0x3397ca3d1375e1fb:0x49ebfa658c0ba08!8m2!3d14.5895972!4d120.9747258"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> INTRAMUROS</b></a>
+	</p>
+	<p style="text-align:center;";>It was known as the "Walled City" and was the stronghold city of the Spaniards back
+		in the Spanish Colonial Era in the Philippines. Exploring Intramuros' streets will 
+		take you back in time because of its well-preserved cobbled streets and infrastructures.
+		Exploring the "Walled City" can be a breeze because you can rent a Bamboo Bike on a shop called
+		BAMBIKE ECOTOURS which is a 2-min walk from the <a href="https://en.wikipedia.org/wiki/San_Agustin_Church_(Manila)" 
+	target="_blank" style="text-decoration:none; color:#387C44; text-shadow: 2px 2px #B5EAAA"";>  San Agustin Church.</a>
+  </p>
+  <a href="https://www.google.com/maps/d/embed?mid=11R3xTRFn1KrRbHXJN8BP8-GrSqE&ie=UTF8&hl=en&msa=0&ll=16.472963000000018%2C120.62439000000003&spn=1.843619%2C3.295898&z=8&output=embed"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Banaue Rice Terraces</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Banaue Rice Terraces is also locally known as "Hagdan-Hagdang Palayan". It was one of the major advancement in farming made by our native ancestors
+	which is created only by hand more than 2,000 years ago. Not only it was a functioning food source but also created a landscape  that expresses great 
+	beauty and harmony between the people and the environment.The Banaue Rice Terraces has been inscribed on the UNESCO WORLD HERITAGE LIST in 1995.
+  </p>
+  <a href="https://www.google.com/maps/place/Vigan+City,+Ilocos+Sur/@17.5635916,120.357422,13z/data=!3m1!4b1!4m5!3m4!1s0x338e6f821753bae5:0x20035e6de330b125!8m2!3d17.5704898!4d120.3873299"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> VIGAN</b></a>
+	</p>
+	<p style="text-align:center;";>
+	If you enjoyed the ambiance that Intramuros have then dont miss out this tourist location in luzon. Vigan City is a well-preserved 
+	Spanish Colonial Town in North Luzon. It is one of the best destinations for people who love history and culture. The best time to explore
+	Vigan is at night time as the streets are filled with antique lamp pose.
+  </p>
+  <a href="https://www.google.com/maps/place/Taal+Volcano/@14.0112735,120.9889361,15z/data=!3m1!4b1!4m5!3m4!1s0x33bd738d30c66c4f:0x749396e27e5f3873!8m2!3d14.0112531!4d120.9976909"
+ target="_blank" style="text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> TAAL Volcano</b></a>
+	</p>
+	<p style="text-align:center;";>
+	<a href="https://www.google.com/maps/place/Tagaytay,+Cavite/@14.1174536,120.8988912,12z/data=!3m1!4b1!4m5!3m4!1s0x33bd777b1ab54c8f:0x6ecc514451ce2be8!8m2!3d14.115286!4d120.9621165"
+target="_blank" style="text-decoration:none; color:#387C44; text-shadow: 2px 2px #B5EAAA";> Tagatay City</a> is a popular holiday destination in Luzon due to its cold and low temperature but tagatay city is known for its
+	famous volcano which the Taal Volcano. Even it is an active volcano, Taal remains as one of the sought out places in luzon because of its eye-catching apperance.
+	Taal Volcano is located in the middle of taal lake. Going to the Taal Volcano is allowed but accompanied with a guide. You can go to Taal volcano by a boat ride.
+  </p>
+  <a href="https://www.google.com/maps/place/Sagada,+Mountain+Province/@17.1098841,120.8363879,12z/data=!3m1!4b1!4m5!3m4!1s0x338e2d19ab8773a3:0xaa2af22d2ba525d!8m2!3d17.0981353!4d120.907304"
+target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> SAGADA</b></a>
+	</p>
+	<p style="text-align:center;";>
+	If you love nature, then this tourist spot is perfect for you! Sagada is a town in the Cordillera Mountains which is known for its scenic and calming mountian valleys,
+	limestone caves, and refreshing waterfalls. Sagada offers sunny but cool weather with lush natural landscapes and a sea of clouds. Sagada is also known for its hanging coffins,
+	Thats right, Coffins hangging from the side of cliffs, Echo Valley is one burial location in sagada.
+  </p>
+  
+  
+</div>
+
+<div id="Vizayas" class="tabcontent">
+<h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Vizayas Destinations to go to! </h3>
+	
+	<a href="https://www.google.com/maps/place/The+Ruins/@10.7092769,122.9825657,15z/data=!4m5!3m4!1s0x0:0x479285d8b2b5242f!8m2!3d10.7092769!4d122.9825657"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> THE RUINS</b></a>
+	</p>
+	<p style="text-align:center;";>
+	How much do you love your partner? Well for Don Mariano Ledesma Lacson, He loved his wife so much that He built her a Italianate style Mansion which later became 
+	Ruins after being burn down during the WWII. The Ruins still stands with its foundation intact. It was formally known as the "TAJ MAHAL OF THE PHILIPPINES" because of its
+	eye-catching design,It is also one of the popular venue for weddings because of its beautifully decorated surroundings.
+  </p>
+  <a href="https://www.google.com/maps/place/Oslob+Whale+Shark+Watching/@9.4633642,123.3775451,17z/data=!3m1!4b1!4m5!3m4!1s0x33ab744452b80907:0x443d13a88e1123d7!8m2!3d9.4633589!4d123.3797338"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> OSLOB</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Oslob has one of the best diving sites in Vizayas but they are most known for their Butanding( Whale Shark)watching.Having a chance to touch and even swim with the 
+	Gentle Giants is an experience you do not want to miss out when you are at Vizayas.
+  </p>
+  <a href="https://www.google.com/maps/place/Chocolate+Hills/@9.8297073,124.122166,14z/data=!3m1!4b1!4m5!3m4!1s0x33aa3da1a65d72f7:0xd89c856a3307dd67!8m2!3d9.829708!4d124.1396756"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> CHOCOLATE HILLS</b></a>
+	</p>
+	<p style="text-align:center;";>
+	<a href="https://www.google.com/maps/place/Bohol/@9.9032133,123.6029162,9z/data=!3m1!4b1!4m5!3m4!1s0x33aa17de1ba154df:0x6bc8bf042118d020!8m2!3d9.8499911!4d124.1435427"
+target="_blank" style="text-decoration:none; color:#387C44; text-shadow: 2px 2px #B5EAAA";> Bohol </a> has alot to offer for tourist just like you, but bohol is best known for their
+chocolate colored hills known as "Chocolate Hills".These hills are known to be a giant replica versions of Hershey's Kisses because of its shape and color. The grass from the hills
+changes its color in the rainy season giving them a soft and lush appearance.While in the summer, the grass dies off and turns to a chocolatey brown.
+  </p>
+ <a href="https://www.google.com/maps/place/Boracay/@11.9693649,121.8922092,13z/data=!3m1!4b1!4m5!3m4!1s0x33a53c2f324b4ee7:0xa738e81e5e6dda36!8m2!3d11.9673753!4d121.924815"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> BORACAY</b></a>
+	</p>
+	<p style="text-align:center;";>
+	When you hear the philippines and the beach, the first thing that probably will pop in your mind will be BORACAY. Boracay is known all over the world and being called a paradise island of the Philippines
+	making it a place people want to go to. It offers the finest white sand, cerulean waters, fun water sports and activities and an amazing night life that will surely captivate you.
+  </p>
+  <a href=https://www.google.com/maps/place/Kawasan+Falls+and+Cottages/@9.8023606,123.3719641,17z/data=!3m1!4b1!4m5!3m4!1s0x33abc071985da1cd:0x357899ef7e6324cf!8m2!3d9.8023553!4d123.3741528"
+target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> KAWASAN FALLS</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Wanting to find a hidden gem deep in the forest? Then head out to <a href="https://www.google.com/maps/place/Mantalongon,+Barili,+Cebu/@10.1283454,123.5700712,15z/data=!3m1!4b1!4m5!3m4!1s0x33a962f1368a60df:0x492aba149274c4da!8m2!3d10.129103!4d123.5811995"
+	target="_blank" style="text-decoration:none; color:#387C44; text-shadow: 2px 2px #B5EAAA";> Mantalongon,Cebu</a> and start your journey finding the Kawasan Falls deep
+	inside the forest. Getting to Kawasan Falls will take some challenge as you need to do some trekking and even swimming through streams which is perfect for adventurous 
+	tourists. The Hardships will be worth it once you arrived at Kawasan falls with its clear turquoise water and surreal view.
+  </p>
+ 
+</div>
+
+<div id="Mindanao" class="tabcontent">
+  <h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Mindanao Destinations to go to! </h3>
+	
+	<a href="https://www.google.com/maps/place/Enchanted+River/@8.4588341,126.3526242,17z/data=!3m1!4b1!4m5!3m4!1s0x32fd8e74ab893c8b:0x417dd65d6bb7ef35!8m2!3d8.4588288!4d126.3548129"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> HINATUAN ENCHANTED RIVER</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Who would expect that enchanted rivers from our childhood stories would exist in real life? Hinatuan Enchanted river is something that came out of a fantasy story because
+	of its magically clear blue saltwater river hidden in the jungle. It looks like a home of a "Diwata" or Goddes which many locals have long thought to be magical.
+	It is around 80-feet deep but many are afraid of swimming that far below because they believe that the diwata will pull them down and prevent them from resurface.
+  </p>
+  <a href="https://www.google.com/maps/place/Mount+Hamiguitan+Range+Wildlife+Sanctuary,+San+Isidro,+Davao+Oriental/@6.7244205,126.0556976,11z/data=!3m1!4b1!4m5!3m4!1s0x32fa375e5235f205:0x67a75dd21ed9c666!8m2!3d6.7392824!4d126.1979764"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Mount Hamiguitan Range Wildlife Sanctuary </b></a>
+	</p>
+	<p style="text-align:center;";>
+	Is a Highland nature and wildlife refugee that is protected by UNESCO which is the home of rare eagles,cockatoos and many more endangered species.
+	The sanctuary is filled with beautiful pygmy trees with a height of 5,315 feet. The sanctuary also hosts rich biodiversity and endemicity of Flora and Fauna which we seldom see
+	today.
+  </p>
+  <a href="https://www.google.com/maps/place/Cloud+9+Surfing+Area/@9.8136751,126.1629646,17z/data=!3m1!4b1!4m5!3m4!1s0x330409ed5e3da33d:0xd2bbc5516a66d5cb!8m2!3d9.8136698!4d126.1651533"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> CLOUD 9</b></a>
+	</p>
+	<p style="text-align:center;";>
+	<a href="https://www.google.com/maps/place/Siargao+Island/@9.9044033,125.9192699,11z/data=!3m1!4b1!4m5!3m4!1s0x3304043652d9e9b3:0xd4c56a60c9a11b84!8m2!3d9.8481883!4d126.0458437"
+target="_blank" style="text-decoration:none; color:#387C44; text-shadow: 2px 2px #B5EAAA";> Siargao </a> is known for being the surfing capital of the Philippines and Cloud 9 
+is the perfect setting to experience the best Siargao waves which is pefect for tourists that loves surfing. If you do not know how to surf, Siargao also offers many activities
+such as Cave explorations and rock climbing. Cloud 9 also has one of the best spots to see the beautiful Sunset.
+  </p>
+ <a href="https://www.google.com/maps/place/Mount+Apo/@6.9874772,125.2622416,15z/data=!3m1!4b1!4m5!3m4!1s0x32f9011b1d616fe9:0x83086f84a0a9e915!8m2!3d6.9874561!4d125.2709964"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> MT. APO </b></a>
+	</p>
+	<p style="text-align:center;";>
+	Known as the "King of Philippine Peaks" rising to 9,692 feet making it the highest volcano in the Philippines and one of the highest in Southeast Asia. This tourist spot is pefect
+	for tourists looking for a thril adventure. Mt apo have seven different peaks that you can go to where you can see scenic views such as the majestic sunrise and sunset.
+	There are different trails that you can take with a help of a guide so dont worrying of getting lost.
+  </p>
+  <a href=https://www.google.com/maps/place/Maasin,+Surigao+del+Norte/@9.8138423,126.0951117,12z/data=!4m9!1m2!2m1!1sMaasin+river!3m5!1s0x330407a930f0a675:0x133d4a6078c7f0f!8m2!3d9.8414955!4d126.0621579!15sCgxNYWFzaW4gcml2ZXKSARRhZG1pbmlzdHJhdGl2ZV9hcmVhNQ"
+target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Maasin River</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Do you want a stress free and peaceful time? Then Maasin River is the destination for you. Take a bamboo stick boat across its Picturesque coconut river 
+	while relaxing to the sound of nature or take a swim into the 6 feet deep river. Maasin River is one of the most beautiful places in Mindanao.
+  </p>
+  
+</div>
+
+<div id="LowerBoarder">
+<img src="./Pictures/LBoarder.png" height="380px" width="1280px">
+</div>
+</div>
+<div id ="LowerNavigation">
+
+<a href="Aboutus.html" title="Learn About Us" style="text-decoration:none";> ABOUT US </a>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+<a href="Contact.html" title="Contact Us" style="text-decoration:none";> CONTACT US </a>
+
+</div>
+</BODY>
+</HTML>

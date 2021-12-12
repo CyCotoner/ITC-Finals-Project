@@ -1,0 +1,215 @@
+<HTML>
+<link rel= "Webpage icon" href="Pictures/Logo.png">
+<link rel ="stylesheet" href="Codes.css">
+<script language="Javascript">
+function Destination(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+<style>
+
+
+.tab {
+  position:absolute;
+  overflow: hidden;
+  left:215px;
+  top:78px;
+  padding:2px;
+  background-image:url(./Pictures/Planks.png);
+  background-size:275px 70px;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float:right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 17px 115px;
+  transition: 0.2s;
+  font-family:Font1;
+  font-size: 17px;
+  color:#B5EAAA;
+  text-shadow: 2px 2px #387C44;
+  
+}
+
+
+.tab button:hover {
+  background-image:inherit;
+  background-size:275px 70px;
+}
+
+
+.tab button.active {
+  background-image:inherit;
+  background-size:275px 70px;
+}
+
+
+.tabcontent {
+  position:absolute;
+  background-image:url(./Pictures/TabBG2.png);
+  background-size:1150px 450px;
+  top:140px;
+  left:70px;
+  display: none;
+  padding: 5px 10px;
+  width:1100px;
+  height:-1000px;
+  border:none;
+  font-family:Font1;
+  letter-spacing:4;
+  text-align:center;
+  font-size: 25px;
+  color:#B5EAAA;
+  text-shadow: 2px 2px #387C44;
+}
+
+
+
+#Categories ul{
+	font-family:Font1;
+	position:relative;
+	text-align:center;
+	top: 100px;
+	left: 180px;
+	width:1000px;
+	letter-spacing:4px;
+	text-shadow:3px 3px #387C44;
+}
+
+#LowerBoarder {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:920px;
+	width:0px;
+}
+
+#LowerNavigation a{
+	position:relative;
+	text-align:center;
+	left:500px;
+	top:1190px;
+	font-family:Font1;
+	color:#B5EAAA;
+	font-size:30px;
+	text-shadow: 3px 3px #493D26;
+	z-index:1
+}
+
+</style>
+<TITLE> Galang Juan | Hotels </TITLE>
+<HEAD>
+<div id="UpperBoarder"> 
+<img src="./Pictures/Boarder.png" height="325px" width="1280px">
+</div>
+
+<div id="Logo"> 
+<a href="Index.html">
+<img src="./Pictures/Logo.png" height="80px" width="80px"></a>
+</div>
+
+<div id="Navigation1">
+ <a href="Destinations.html" title="Let's Explore!" style="text-decoration:none;"> DESTINATIONS
+</a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; &nbsp; <a href="Foods.html" title="Find the Best food spots " style="text-decoration:none;"> FOOD LOCATIONS </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Hotels.html" title= "BOOK NOW!" style="text-decoration:none";> HOTELS </a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="Blogs.html" title= "Share your experiences" style="text-decoration:none";> COMMUNITY BLOG</a>
+</div>
+
+</HEAD>
+<BODY>
+<div class="tab">
+  <button class="tablinks" onclick="Destination(event, 'Luzon')">Luzon</button>
+  <button class="tablinks" onclick="Destination(event, 'Vizayas')">Vizayas</button>
+  <button class="tablinks" onclick="Destination(event, 'Mindanao')">Mindanao</button>
+</div>
+
+<div id="Luzon" class="tabcontent">
+	<h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>TOP 10 HOTELS TO BOOK </h3>
+	
+	<p style="font-size:40pt; text-align:center; color:#387C44; text-shadow: 2px 2px #B5EAAA";>
+	<b>◉ Okada Manila (Staycation Approved)
+		<br>◉ Conrad Manila 
+		<br>◉ Fairmont Makati
+		<br>◉ The Peninsula Manila
+		<br>◉ Grand Hyatt Manila
+		<br>◉ Shangri-La The Fort
+		<br>◉ Marco Polo Ortigas Manila
+		<br>◉ Capitol Hill Hotel and Suites
+		<br>◉ City Of Dreams
+		<br>◉ Raffles Makati
+	
+	
+	</b>
+	</p>
+	
+</div>
+
+<div id="Vizayas" class="tabcontent">
+<h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>TOP 10 HOTELS TO BOOK </h3>
+	
+	<p style="font-size:40pt; text-align:center; color:#387C44; text-shadow: 2px 2px #B5EAAA";>
+	<b> 
+	<br>◉ Canto's Lodging Home 
+	<br>◉ The Lind Boracay 
+	<br>◉ Radisson Blu Cebu
+	<br>◉ Marco Polo Plaza Cebu
+	<br>◉ Seda Ayala Center Cebu 
+	<br>◉ Zuri Hotel
+	<br>◉ Aqua Boracay 
+	<br>◉ Dumdum Medical Plaza and Residences 
+	<br>◉ Ramalyn Beach Resort 
+	<br>◉ Semi Mountain Resort 
+	
+	
+	</b>
+	</p>
+ 
+</div>
+
+<div id="Mindanao" class="tabcontent">
+  <h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Top 5 HOTELS TO BOOK </h3>
+	
+	<p style="font-size:40pt; text-align:center; color:#387C44; text-shadow: 2px 2px #B5EAAA";>
+	<b> 
+	<br>◉ Dusit Thani Residence Davao
+	<br>◉ Butuan Grand Palace Hotel 
+	<br>◉ Sena Gladyz Suites
+	<br>◉ Davao Persimmon Suites 
+	</b>
+	
+	</p>
+	
+  
+</div>
+
+<div id="LowerBoarder">
+<img src="./Pictures/LBoarder.png" height="380px" width="1280px">
+</div>
+</div>
+<div id ="LowerNavigation">
+
+<a href="Aboutus.html" title="Learn About Us" style="text-decoration:none";> ABOUT US </a>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+<a href="Contact.html" title="Contact Us" style="text-decoration:none";> CONTACT US </a>
+
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,50 @@
+body {
+	 background-image: url(./Pictures/Background.png);
+	 background-size:cover;
+	 background-color:#97C78E;
+	 background-attachment:fixed;
+	 background-repeat:no-repeat;
+	 
+	}
+
+@font-face {
+  font-family:Font1;
+  src: url(font.woff);
+}
+
+#UpperBoarder { 
+	position:absolute;
+	left:0px;
+	right:100px;
+	top:-135px;
+	width:0px;
+
+}
+
+#LowerBoarder {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:340px;
+	width:0px;
+}
+
+#Logo {
+	position:absolute;
+	left:600px;
+	top: 1px;
+	width:0px;
+	
+}
+
+
+#Navigation1 a{
+	position:relative;
+	text-align:center;
+	left:180px;
+	top:10px;
+	font-family:Font1;
+	color:#B5EAAA;
+	font-size:30px;
+	text-shadow: 3px 3px #493D26;
+}

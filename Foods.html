@@ -1,0 +1,313 @@
+<HTML>
+<link rel= "Webpage icon" href="Pictures/Logo.png">
+<link rel ="stylesheet" href="Codes.css">
+<script language="Javascript">
+function Destination(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+<style>
+
+
+.tab {
+  position:absolute;
+  overflow: hidden;
+  left:215px;
+  top:78px;
+  padding:2px;
+  background-image:url(./Pictures/Planks.png);
+  background-size:275px 70px;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float:right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 17px 115px;
+  transition: 0.2s;
+  font-family:Font1;
+  font-size: 17px;
+  color:#B5EAAA;
+  text-shadow: 2px 2px #387C44;
+  
+}
+
+
+.tab button:hover {
+  background-image:inherit;
+  background-size:275px 70px;
+}
+
+
+.tab button.active {
+  background-image:inherit;
+  background-size:275px 70px;
+}
+
+
+.tabcontent {
+  position:absolute;
+  background-image:url(./Pictures/TabBG2.png);
+  background-size:1150px 450px;
+  top:140px;
+  left:70px;
+  display: none;
+  padding: 5px 10px;
+  width:1100px;
+  height:-1000px;
+  border:none;
+  font-family:Font1;
+  letter-spacing:4;
+  text-align:center;
+  font-size: 25px;
+  color:#B5EAAA;
+  text-shadow: 2px 2px #387C44;
+}
+
+
+
+#Categories ul{
+	font-family:Font1;
+	position:relative;
+	text-align:center;
+	top: 100px;
+	left: 180px;
+	width:1000px;
+	letter-spacing:4px;
+	text-shadow:3px 3px #387C44;
+}
+
+#LowerBoarder {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:1720px;
+	width:0px;
+}
+
+#LowerNavigation a{
+	position:relative;
+	text-align:center;
+	left:500px;
+	top:1990px;
+	font-family:Font1;
+	color:#B5EAAA;
+	font-size:30px;
+	text-shadow: 3px 3px #493D26;
+	z-index:1
+}
+
+</style>
+<TITLE> Galang Juan | Food Locations </TITLE>
+<HEAD>
+<div id="UpperBoarder"> 
+<img src="./Pictures/Boarder.png" height="325px" width="1280px">
+</div>
+
+<div id="Logo"> 
+<a href="Index.html">
+<img src="./Pictures/Logo.png" height="80px" width="80px"></a>
+</div>
+
+<div id="Navigation1">
+ <a href="Destinations.html" title="Let's Explore!" style="text-decoration:none;"> DESTINATIONS
+</a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; &nbsp; <a href="Foods.html" title="Find the Best food spots " style="text-decoration:none;"> FOOD LOCATIONS </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="Hotels.html" title= "BOOK NOW!" style="text-decoration:none";> HOTELS </a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="Blogs.html" title= "Share your experiences" style="text-decoration:none";> COMMUNITY BLOG</a>
+</div>
+
+</HEAD>
+<BODY>
+<div class="tab">
+  <button class="tablinks" onclick="Destination(event, 'Luzon')">Luzon</button>
+  <button class="tablinks" onclick="Destination(event, 'Vizayas')">Vizayas</button>
+  <button class="tablinks" onclick="Destination(event, 'Mindanao')">Mindanao</button>
+</div>
+
+<div id="Luzon" class="tabcontent">
+	<h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Luzon Food Locations to go to! </h3>
+	
+	<a href="https://www.facebook.com/downtowncafe1956/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> The 1956 Downtown Cafe</b></a>
+	</p>
+	<p style="text-align:center;";>
+	 A retro-style eatery does not only signify the owner Chef Claude Tayag’s date of birth, but also the era he holds dearest to him.
+	 They Kapampangan Fusion dishes and the most famous dish they offer is Claude Tayag's twist that such as fried samosa with spinach, tinapa, kesong Puti and pili nuts
+	,Crispy Aromatic Duck and Crispy Bagnetta and A stack of deep-fried pork rolled up like donuts.
+  </p>
+  <a href="https://www.instagram.com/callebrewery/?hl=en"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Calle Brewery</b></a>
+	</p>
+	<p style="text-align:center;";>
+	The home of local craft beers and smoked meats in Vigan. It is along Calle Crisologo and less than 200m away from Syquia Mansion Museum.
+	At the entrance of the brewery is the long bar where they serve their home-grown crafted beers.They five specialty beers named after local
+	heroes such as Salakot ni Diego (honey-flavored beer), Espada ni Lapu-Lapu (bittersweet beer), Canyon ni Panday (fruity finish), Bigote ni Antonio (a bit citrusy), 
+	and Kabayo ni Gabriela with a strong kick of coffee and caramel.
+  </p>
+  <a href="https://www.facebook.com/chefscookhouse/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Foggy Mountain Cookhouse</b></a>
+	</p>
+	<p style="text-align:center;";>
+	 Foggy Mountain Cookhouse offers its guests a spacious alfresco dining area which gives off a cozy ambiance. Customers can get a great view of the landscape, often covered
+	 in some fog, nearby when seating in the alfresco area. The food they offer has an inspiration from the Mediterranean Cuisine. They are also well-known for their 
+	 oven-roasted whole chicken that is cooked in a brick oven.
+  </p>
+  <a href="https://www.barbaras.ph/"
+ target="_blank" style="text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Barbara's Heritage Restaurant</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Be transported back in time with Filipino and Spanish cuisine at no other place than Barbara’s cuisine, when dining in you’ll witness a cultural dance performance and enjoy eating
+	in their Spanish-era-inspired interiors that gives off a charming old-school ambiance.
+  </p>
+  <a href="https://www.facebook.com/LesliesRidgeandRestaurant/"
+target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Leslie's</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Tagatay is known for their Special Bulalo and Leslie’s offers good bulalo with a view. They are also one of the popular restaurants in Tagatay. Some of the notable dishes they offer are Mangga at Bagoong, 
+	Crispy Kangkong con Lechon, Bulalo Original, Sizzling Bulalo with Gravy. The restaurant also offers a more romantic setup which includes your own cottage.
+  </p>
+  
+  
+</div>
+
+<div id="Vizayas" class="tabcontent">
+<h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Vizayas Food Locations to go to! </h3>
+	
+	<a href="https://www.facebook.com/thepigandpalm/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Pig & Palm </b></a>
+	</p>
+	<p style="text-align:center;";>
+	Pig & Palm promotes Cebu’s local ingredients in every way they can, from cocktails infused with fresh fruits up to the fancy dishes with a dash of Pinoy spices.
+	They may possess a modern European vibe but still sure keeps the flavor of Cebu.Pig & Palm is prepared for any occasions as they have different rooms for different occasions
+	such as a private booth for those who want to eat in private,a resto where you can watch them prepare your food and a dining area for mass gatherings.
+  </p>
+  <a href="https://www.facebook.com/pages/category/Filipino-Restaurant/TNTS-Boodle-Fight-And-Seafood-House-825119974315049/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> TNTS Boodle Fight & Seafood House</b></a>
+	</p>
+	<p style="text-align:center;";>
+	TNTS Boodle Fight and Seafood House serves is famous for their budget-friendly "boodle fight". A one boodle fight setup can serve as much 10 or more people.
+	They keep the tradition way of eating "boodle fight" which the name itself translates to eat with your hands and enjoy a lively company of friends and family.
+  </p>
+  <a href="https://www.facebook.com/cocolocobohol/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> COCO LOCO</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Coco Loco is a family-owned cafe/restaurant that is known for its house specialty, the coco burger, a beef alternative that uses a burger patty made of 
+	grated coconuts that is said to taste just like meat. Other must-try dishes include the hummus and veggie burgers, while non-plant food meals like pork barbecue 
+	ribs and chicken couscous are also local favorites. They also offer homemade ice cream with chili flavor.
+  </p>
+ <a href="https://www.facebook.com/tatoysiloilo/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> Tatoy's Manukan and Seafoods</b></a>
+	</p>
+	<p style="text-align:center;";>
+	From a nipa shack with three tables to being one of the biggest and most popular restaurants in Iloilo, the rags to riches story of Tatoy’s Manukan and Seafoods is almost legendary.
+	They offer a various amount of dishes like fishes, crabs, squids, prawns, scallops and more, to meat dishes like lechon baboy and chicken binakol but their specialty is the native litsong manok. 
+  </p>
+  <a href="https://www.facebook.com/bitoysbalaybarbekyuhan/"
+target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b>  BITOY'S BALAY BARBEKYUHAN</b></a>
+	</p>
+	<p style="text-align:center;";>
+	Bitoy’s Balay Barbekyuhan is housed in a colorful open-aired structure surrounded on the roadside by trees and the sprawling Baybay Beach. 
+	They are known for their Bitoy's Famous barbeque.
+  </p>
+ 
+</div>
+
+<div id="Mindanao" class="tabcontent">
+  <h3 style="font-size:60pt; color:#493D26; text-shadow: 3px 3px #B5EAAA";>Mindanao Food Locations to go to! </h3>
+	
+	<a href="https://www.facebook.com/buffalorestocdo/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> BUFFALO RESTO GRILL</b></a>
+	</p>
+	<p style="text-align:center;";>
+	The menu lineup at this restaurant is mostly Filipino dishes with their bestsellers usually being the local Baby Back Ribs, Sinuglaw, and Kinilaw. Their Pancit and Empanada are also second to none in the city, 
+	and many regulars of the restaurant will swear to this. Their empanada is sometimes ordered in large quantities for take out to be served at parties, other special occasions, or brought home. Lengua Estofada is is one of their topsellers.
+  </p>
+  
+	<p style="font-size:40pt; text-align:center; color:#387C44; text-shadow: 2px 2px #B5EAAA";>
+	<b> KAGAY-ANON RESTAURANT </b>
+	</p>
+	<p style="text-align:center;";>
+	Kagay-anon restaurant is one of a very few select restaurants in the city that serves authentic ostrich meat as well. It is actually one of the biggest fine dining places in the city and still uses typical Filipino wooden furniture and 
+	serving utensils. Their menu may seem a little pricey, but the servings are quite large and may even be too much for two persons.
+  </p>
+  <a href="https://www.facebook.com/ilovedearmanok/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> DEAR MANOK </b></a>
+	</p>
+	<p style="text-align:center;";>
+	One of CDO’s fairly old grilled chicken restaurants. They have what they call “Group Feasts” for large groups, and of course their bestsellers are their chicken and rice meals, Sizzling Sisig, Boneless Bangus, Sizzling Squid, and Kinilaw.
+	Their function room is also growing in popularity for small to medium events and occasions.
+  </p>
+ <a href="https://www.facebook.com/BigbysSMSeasideCebu/"
+ target="_blank" style= "text-decoration:none; color:#387C44";>
+	<p style="font-size:40pt; text-align:center; text-shadow: 2px 2px #B5EAAA";>
+	<b> BIGBY’S CAFE AND RESTAURANT </b></a>
+	</p>
+	<p style="text-align:center;";>
+	Bigby’s is locally owned but has expanded with branches in Manila, Cebu, Davao, and Bacolod. The restaurant’s ambience is actually a cross between fine dining and casual eating, and is a great place for pairs, family meals, or large group partaking.
+	Anyone going there is advised to try out their house specialties and best sellers such as their pork, chicken, beef, seafood, veggies, and other specialty dishes with those kinds of funny names.
+  </p>
+ 
+	<p style="font-size:40pt; text-align:center; color:#387C44; text-shadow: 2px 2px #B5EAAA";>
+	<b> CUCINA DE ORO </b>
+	</p>
+	<p style="text-align:center;";>
+	Many will remember this as the original Chicken Ati-atihan before taking the name of Cucina de Oro.They also serve other great grilled and sizzling dishes that they have always been known for, as well as the best Pochero and Ostrich dishes in town
+  </p>
+  
+</div>
+
+<div id="LowerBoarder">
+<img src="./Pictures/LBoarder.png" height="380px" width="1280px">
+</div>
+</div>
+<div id ="LowerNavigation">
+
+<a href="Aboutus.html" title="Learn About Us" style="text-decoration:none";> ABOUT US </a>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+<a href="Contact.html" title="Contact Us" style="text-decoration:none";> CONTACT US </a>
+
+</div>
+</BODY>
+</HTML>
